@@ -1,4 +1,6 @@
-export const theme = {
+import { createTheme } from '@mantine/core';
+
+export const theme = createTheme({
   primaryColor: 'blue',
   colors: {
     blue: [
@@ -20,5 +22,5 @@ export const theme = {
     fontWeight: '600',
   },
   defaultRadius: 'md',
-};
+});
 
