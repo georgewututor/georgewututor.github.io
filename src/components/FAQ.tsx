@@ -1,8 +1,8 @@
-import { Accordion, Stack, Title, Text } from '@mantine/core';
+import { Accordion, Stack, Title, Text, Anchor } from '@mantine/core';
 
 export default function FAQ() {
   return (
-    <div style={{ padding: '4rem 1rem', maxWidth: 1000, margin: '0 auto' }}>
+    <div style={{ padding: '2rem 1rem', maxWidth: 1000, margin: '0 auto' }}>
       <Stack gap="md">
         <Title order={2}>Frequently Asked Questions</Title>
 
@@ -33,68 +33,59 @@ export default function FAQ() {
             },
           })}
         >
-          <Accordion.Item value="format">
+          <Accordion.Item value="demographic">
             <Accordion.Control>
-              What does a typical tutoring session look like?
+              Who are your tutoring sessions best suited for?
             </Accordion.Control>
             <Accordion.Panel>
               <Text>
-                Sessions can be held <strong>online or in person</strong>, and may be
-                <strong> one-on-one</strong> or in <strong>small groups (1:n)</strong>.
-                Each session is tailored to the student’s goals and typically includes
-                concept review, guided practice, and problem-solving.
+                I generally tutor <strong>high school students and older</strong>, but I’m
+                also open to working with younger students who have a strong interest in
+                computer science. Sessions are adapted to each student’s skill level and
+                learning style.
               </Text>
             </Accordion.Panel>
           </Accordion.Item>
 
-          <Accordion.Item value="subjects">
+          <Accordion.Item value="topics">
             <Accordion.Control>
-              What subjects do you tutor?
+              What topics do you cover in tutoring?
             </Accordion.Control>
             <Accordion.Panel>
               <Text>
-                I focus on computer science topics such as algorithms, data structures,
-                Python, and core CS fundamentals, as well as exam and interview preparation.
+                I cover core computer science topics such as <strong>Python, algorithms,
+                data structures, OOP, recursion, and problem-solving strategies</strong>.
+                I also support <strong>AP CS, college-level CS courses,</strong> and 
+                <strong>coding interview preparation</strong>.
               </Text>
             </Accordion.Panel>
           </Accordion.Item>
 
-          <Accordion.Item value="students">
+          <Accordion.Item value="personalization">
             <Accordion.Control>
-              What age range or experience level do you work with?
+              Do you provide organized or personalized content?
             </Accordion.Control>
             <Accordion.Panel>
               <Text>
-                I work with high school and college students, from beginners building
-                foundations to advanced students refining problem-solving skills.
-              </Text>
-            </Accordion.Panel>
-          </Accordion.Item>
-
-          <Accordion.Item value="customization">
-            <Accordion.Control>
-              Are sessions personalized?
-            </Accordion.Control>
-            <Accordion.Panel>
-              <Text>
-                Yes. I adapt each session to the student’s pace, learning style, and goals
-                rather than following a fixed curriculum.
-              </Text>
-            </Accordion.Panel>
-          </Accordion.Item>
-
-          <Accordion.Item value="parents">
-            <Accordion.Control>
-              How do you communicate progress with parents?
-            </Accordion.Control>
-            <Accordion.Panel>
-              <Text>
-                I’m happy to provide regular updates on progress, areas of improvement, and
-                next steps to ensure transparency and alignment.
+                Yes! I prepare structured content and tailor it to each student’s needs.
+                Every session is personalized based on the student’s current knowledge, 
+                goals, and preferred learning style, ensuring efficient and meaningful progress.
               </Text>
             </Accordion.Panel>
           </Accordion.Item>
         </Accordion>
+
+
+        <Stack gap={16} style={{ marginTop: 32 }}>
+          <Text size="lg">
+            Have any further questions? Schedule a{' '}
+            <Anchor href="YOUR_SCHEDULING_LINK" target="_blank">
+              <strong>15-minute call</strong>
+            </Anchor>{' '}
+            to see if this tutoring style is the right fit.
+          </Text>
+        </Stack>
+
       </Stack>
     </div>
   );

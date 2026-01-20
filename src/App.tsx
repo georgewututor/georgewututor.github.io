@@ -2,6 +2,7 @@ import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
 import FAQ from './components/FAQ'
 import GoodFit from './components/GoodFit'
+import HowTutoringWorks from './components/HowtTutoringWorks'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Hero />
       <AboutMe />
       <GoodFit />
+      <HowTutoringWorks />
       <FAQ />
     </>
   )

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div
       style={{
-        height: '50vh',
+        height: '65vh',
         backgroundImage:
           'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0,0,0,0.5)), url(/banner.jpg)',
         backgroundSize: 'cover',
@@ -13,20 +13,28 @@ export default function Hero() {
         alignItems: 'center',
       }}
     >
-      <Container size="sm">
+      <Container size="md">
         <Stack gap="md" align="flex-start">
+
           <Title order={1} c="white">
-            CS Tutoring
+            Personalized CS Tutoring
           </Title>
 
+          {/* Combined description for smoother flow */}
           <Text c="gray.2" size="lg">
-            Personalized computer science tutoring for high school and college
-            students. Algorithms, data structures, and interview prep.
+            Build strong CS fundamentals and master algorithms and data structures while developing the skills to tackle complex problems and design meaningful projects. Learn how to use code as a tool to understand, explore, and shape the world around you.
           </Text>
 
-          <Button size="md" radius="md" style={{ marginTop: '1.5rem' }}>
-            Book Free Call
+          <Button
+            size="md"
+            radius="md"
+            style={{ marginTop: '1.5rem'}}
+          >
+            Book a Free Intro Call
           </Button>
+          <Text c="gray.3" size="sm" mt="xs">
+            A short discussion to ensure we’re a good fit and align on expectations.
+          </Text>
         </Stack>
       </Container>
     </div>

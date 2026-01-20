@@ -2,7 +2,7 @@ import { Anchor, Grid, Image, Stack, Text, Title } from '@mantine/core'
 
 export default function AboutMe() {
   return (
-    <div style={{ padding: '4rem 1rem', maxWidth: 1000, margin: '0 auto' }}>
+    <div style={{ padding: '2rem 1rem', maxWidth: 1000, margin: '0 auto' }}>
       <Grid gutter="xl" align="flex-start">
         {/* Left: Profile Picture */}
         <Grid.Col span={{ base: 12, md: 4 }}>
@@ -18,7 +18,6 @@ export default function AboutMe() {
         <Grid.Col span={{ base: 12, md: 8 }}>
           <Stack gap="sm" align="flex-start">
             {/* Name + LinkedIn */}
-
             <Title order={2} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               George Wu
               <Anchor href="https://www.linkedin.com/in/georgewu" target="_blank">
@@ -30,41 +29,25 @@ export default function AboutMe() {
               </Anchor>
             </Title>
 
-            {/* Bio info */}
-            <Text>
-              🎓 Fourth-year Computer Engineering student at UC San Diego  
-              💼 Algorithms Developer at Triton Unmanned Aerial Systems  
-              👨‍🏫 Experienced tutoring high school and college students  
-              💡 Specialize in algorithms, data structures, Python, and teaching foundational CS concepts
-            </Text>
+            {/* Bio info with labels */}
+            <Stack spacing={2}>
+              <Text><strong>Education:</strong> UC San Diego, B.S. in Computer Engineering</Text>
+              <Text><strong>Industry Experience:</strong> Software Engineer at Nuro; Interned at Atlassian & TikTok</Text>
+              <Text><strong>Teaching Experience:</strong> 1 year tutoring high school and college students</Text>
+              <Text><strong>Specialties:</strong> Algorithms, data structures, Python, and teaching CS as a problem-solving tool</Text>
+            </Stack>
           </Stack>
         </Grid.Col>
       </Grid>
 
-      {/* Teaching Philosophy Sections */}
+      {/* Teaching Philosophy */}
       <Stack gap="lg" mt="4rem">
         <div>
           <Title order={3}>My Teaching Philosophy</Title>
           <Text>
-            I focus on building strong conceptual understanding first, then gradually move
-            into problem-solving and real-world applications. I tailor each session to the
-            student’s pace and goals.
-          </Text>
-        </div>
-
-        <div>
-          <Title order={3}>Engagement and Interaction</Title>
-          <Text>
-            I emphasize active participation, asking questions, and hands-on exercises to
-            ensure students internalize the material and gain confidence in their skills.
-          </Text>
-        </div>
-
-        <div>
-          <Title order={3}>Long-Term Growth</Title>
-          <Text>
-            Beyond immediate coursework or interview prep, I aim to instill critical thinking
-            habits and a growth mindset that students can carry forward in CS and beyond.
+            I focus on building strong conceptual understanding first, helping students see computer science as a tool for solving real-world problems. I prioritize active engagement through questions, discussions, and hands-on exercises to make learning interactive and meaningful. Above all, I aim to foster long-term growth by developing critical thinking skills, problem-solving habits, and a growth mindset that students can carry forward in CS and beyond.  
+            <br /><br />
+            I enjoy guiding students to apply these skills in projects and problem-solving challenges, helping them gain confidence and a deeper appreciation for how CS can be a powerful tool for creativity and real-world impact.
           </Text>
         </div>
       </Stack>
