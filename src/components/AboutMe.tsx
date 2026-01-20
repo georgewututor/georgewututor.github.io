@@ -30,7 +30,7 @@ export default function AboutMe() {
             </Title>
 
             {/* Bio info with labels */}
-            <Stack spacing={2}>
+            <Stack gap={3}>
               <Text><strong>Education:</strong> UC San Diego, B.S. in Computer Engineering</Text>
               <Text><strong>Industry Experience:</strong> Software Engineer at Nuro; Interned at Atlassian & TikTok</Text>
               <Text><strong>Teaching Experience:</strong> 1 year tutoring high school and college students</Text>
