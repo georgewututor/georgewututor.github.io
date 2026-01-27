@@ -26,12 +26,15 @@ export default function Hero() {
           </Text>
 
           <Button
+            component="a"
+            href="https://calendly.com/georgewututor/book"
             size="md"
             radius="md"
-            style={{ marginTop: '1.5rem'}}
+            style={{ marginTop: '1.5rem' }}
           >
             Book a Free Intro Call
           </Button>
+
           <Text c="gray.3" size="sm" mt="xs">
             A short discussion to ensure we’re a good fit and align on expectations.
           </Text>

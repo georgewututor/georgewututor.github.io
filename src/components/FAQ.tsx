@@ -79,7 +79,7 @@ export default function FAQ() {
         <Stack gap={16} style={{ marginTop: 32 }}>
           <Text size="lg">
             Have any further questions? Schedule a{' '}
-            <Anchor href="YOUR_SCHEDULING_LINK" target="_blank">
+            <Anchor href="https://calendly.com/georgewututor/book" target="_blank">
               <strong>15-minute call</strong>
             </Anchor>{' '}
             to see if this tutoring style is the right fit.
